@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Hetshavi Fertilizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#1B5E20', secondary: '#4CAF50', light: '#FAFAFA' } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light text-gray-800 pt-20">
+
+    <!-- Header (Same as index.html) -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                <span class="text-2xl font-bold text-primary tracking-tight font-heading">Hetshavi Fertilizer</span>
+            </a>
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-secondary transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-secondary transition">About</a>
+                <a href="products.html" class="text-primary hover:text-secondary transition">Products</a>
+                <a href="services.html" class="text-gray-600 hover:text-secondary transition">Services</a>
+                <a href="faq.html" class="text-gray-600 hover:text-secondary transition">FAQ</a>
+            </nav>
+            <div class="hidden md:flex gap-4">
+                <a href="contact.html" class="bg-secondary hover:bg-primary text-white px-6 py-2 rounded-full font-medium btn-hover">Contact Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 glass shadow-lg">
+            <div class="flex flex-col px-4 py-2">
+                <a href="index.html" class="py-3 border-b border-gray-100 text-gray-600">Home</a>
+                <a href="about.html" class="py-3 border-b border-gray-100 text-gray-600">About</a>
+                <a href="products.html" class="py-3 border-b border-gray-100 text-primary font-medium">Products</a>
+                <a href="services.html" class="py-3 border-b border-gray-100 text-gray-600">Services</a>
+                <a href="faq.html" class="py-3 border-b border-gray-100 text-gray-600">FAQ</a>
+                <a href="contact.html" class="py-3 text-secondary font-medium"><i class="fa-solid fa-phone mr-2"></i>Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4 font-heading">Our Premium Products</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Explore our wide range of high-quality fertilizers and NPK products.</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            
+            <!-- Filter Options -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-primary text-white px-6 py-2 rounded-full font-semibold shadow-md">All Products</button>
+                <button class="bg-white text-gray-600 hover:bg-green-50 hover:text-primary px-6 py-2 rounded-full font-semibold shadow-sm border border-gray-200 transition-colors">Fertilizers</button>
+                <button class="bg-white text-gray-600 hover:bg-green-50 hover:text-primary px-6 py-2 rounded-full font-semibold shadow-sm border border-gray-200 transition-colors">NPK Blends</button>
+            </div>
+
+            <!-- Grid 1: Mobile, 3: Desktop -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Fertilizers -->
+                <script>
+                    const fertilizers = [
+                        { name: "Ammonium Sulphate (Mono)", desc: "Essential nitrogen and sulfur source for rapid growth.", grade: "98%" },
+                        { name: "Ammonium Sulphate (Hepta)", desc: "High purity fertilizer enhancing soil nutrient profiles.", grade: "98%" },
+                        { name: "Magnesium Sulphate (Mono)", desc: "Prevents magnesium deficiency, crucial for photosynthesis.", grade: "98%" },
+                        { name: "Magnesium Sulphate (Hepta)", desc: "Fast-acting magnesium supplement for immediate uptake.", grade: "98%" },
+                        { name: "Zinc Sulphate (Mono)", desc: "Vital for plant enzyme systems and growth hormones.", grade: "12%, 21%, 33%" },
+                        { name: "Zinc Sulphate (Hepta)", desc: "Highly soluble zinc source for foliar and soil application.", grade: "18%, 21%, 33%" },
+                        { name: "Copper Sulphate (Crystal)", desc: "Premium copper supplement, acts as a fungicide and nutrient.", grade: "22%, 24%" },
+                        { name: "Copper Sulphate (Powder)", desc: "Easily soluble powder form for quick agricultural use.", grade: "22%, 24%" },
+                        { name: "Humic Acid Flakes", desc: "Improves soil structure and nutrient uptake significantly.", grade: "8% K2O, 10% K2O" },
+                        { name: "Seaweed Powder", desc: "Natural biostimulant rich in trace minerals and hormones.", grade: "Standard" },
+                        { name: "Sodium Sulphate", desc: "Industrial and agricultural grade sodium and sulfur source.", grade: "Standard" },
+                        { name: "Bentonite (Roasted)", desc: "Excellent carrier and soil conditioner with high absorption.", grade: "16x35 / 12x26 / 12x25 / 12x32" },
+                        { name: "Bentonite (Granules)", desc: "Granular form for easy broadcasting and blending.", grade: "Standard" }
+                    ];
+
+                    const npk = [
+                        { name: "NPK 10:26:26", desc: "Balanced complex fertilizer rich in Phosphorus and Potassium.", grade: "10:26:26" },
+                        { name: "NPK 13:00:45", desc: "Potassium Nitrate blend for flowering and fruiting stages.", grade: "13:00:45" },
+                        { name: "NPK 00:00:50", desc: "Sulphate of Potash, ideal for chloride-sensitive crops.", grade: "00:00:50" },
+                        { name: "NPK 00:52:34", desc: "Mono Potassium Phosphate for rapid root and shoot development.", grade: "00:52:34" },
+                        { name: "NPK 25:25:25", desc: "Perfectly balanced formulation for overall plant health.", grade: "25:25:25" },
+                        { name: "NPK 16:16:16", desc: "Standard NPK blend suitable for a wide variety of crops.", grade: "16:16:16" }
+                    ];
+
+                    function renderProduct(product, category) {
+                        const imgUrls = [
+                            'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=600',
+                            'https://images.unsplash.com/photo-1592484435969-e0c8b368a5c3?auto=format&fit=crop&q=80&w=600',
+                            'https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=600',
+                            'https://images.unsplash.com/photo-1586771107584-568c56976722?auto=format&fit=crop&q=80&w=600',
+                            'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=600',
+                            'https://images.unsplash.com/photo-1405101416390-48e025b64df4?auto=format&fit=crop&q=80&w=600'
+                        ];
+                        const imgIndex = product.name.length % imgUrls.length;
+                        const imgSrc = imgUrls[imgIndex];
+
+                        return `
+                        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 card-hover flex flex-col">
+                            <div class="relative h-56 overflow-hidden border-b border-gray-100">
+                                <img src="${imgSrc}" alt="${product.name}" class="w-full h-full object-cover hover-zoom">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <div class="text-xs text-secondary font-bold tracking-widest uppercase mb-2">${category}</div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3 font-heading leading-tight">${product.name}</h3>
+                                <p class="text-gray-600 mb-4 text-sm flex-grow">${product.desc}</p>
+                                <div class="mb-6 bg-gray-50 p-3 rounded-lg border border-gray-100">
+                                    <span class="text-xs text-gray-500 uppercase tracking-wider block mb-1">Composition / Grade</span>
+                                    <span class="font-bold text-primary">${product.grade}</span>
+                                </div>
+                                <div class="pt-2 mt-auto">
+                                    <button onclick="enquireWhatsApp('${product.name}')" class="w-full bg-[#25D366] hover:bg-[#1da851] text-white px-5 py-4 rounded-xl font-bold transition text-sm flex items-center justify-center gap-2 btn-hover shadow-md">
+                                        <i class="fa-brands fa-whatsapp text-xl"></i> Enquire on WhatsApp
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    }
+
+                    const grid = document.querySelector('.grid');
+                    fertilizers.forEach(p => grid.innerHTML += renderProduct(p, 'Fertilizer'));
+                    npk.forEach(p => grid.innerHTML += renderProduct(p, 'NPK Blend'));
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-[6px] border-secondary mt-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                    <span class="text-3xl font-bold text-white tracking-tight font-heading">Hetshavi Fertilizer</span>
+                </a>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">Empowering farmers with modern, sustainable agricultural solutions for a greener, more productive tomorrow.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block font-heading">Quick Links<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-3 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform">Home</a></li>
+                    <li><a href="about.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform">Our Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block font-heading">Contact Info<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-secondary text-lg"></i> Shivrudra Complex, Shop No F-4, Leela Road Leela circle, Bhavnagar, Gujarat 364002</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-secondary text-lg"></i> +91 97146 29090</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block font-heading">Newsletter<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <form class="flex flex-col gap-2">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md text-gray-800 outline-none focus:ring-2 focus:ring-secondary border-none" required>
+                    <button type="submit" class="bg-secondary px-4 py-3 rounded-md hover:bg-green-600 transition text-white font-bold text-sm w-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+            <p>&copy; 2026 Hetshavi Fertilizer. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/919714629090" class="whatsapp-float group" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-full mr-4 bg-gray-800 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">Chat with us</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

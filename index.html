@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetshavi Fertilizer - Premium Modern Agriculture</title>
+    <meta name="description" content="Premium agricultural products and services for a sustainable future.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#1B5E20', secondary: '#4CAF50', light: '#FAFAFA' },
+                    backgroundImage: {
+                        'hero': "url('assets/img/hero_farm.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light text-gray-800">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                <span class="text-2xl font-bold text-primary tracking-tight">Hetshavi Fertilizer</span>
+            </a>
+            
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="index.html" class="text-primary hover:text-secondary transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-secondary transition">About</a>
+                <a href="products.html" class="text-gray-600 hover:text-secondary transition">Products</a>
+                <a href="services.html" class="text-gray-600 hover:text-secondary transition">Services</a>
+                <a href="faq.html" class="text-gray-600 hover:text-secondary transition">FAQ</a>
+            </nav>
+            
+            <div class="hidden md:flex gap-4">
+                <a href="contact.html" class="bg-secondary hover:bg-primary text-white px-6 py-2 rounded-full font-medium btn-hover">Contact Us</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 glass shadow-lg">
+            <div class="flex flex-col px-4 py-2">
+                <a href="index.html" class="py-3 border-b border-gray-100 text-primary font-medium">Home</a>
+                <a href="about.html" class="py-3 border-b border-gray-100 text-gray-600">About</a>
+                <a href="products.html" class="py-3 border-b border-gray-100 text-gray-600">Products</a>
+                <a href="services.html" class="py-3 border-b border-gray-100 text-gray-600">Services</a>
+                <a href="faq.html" class="py-3 border-b border-gray-100 text-gray-600">FAQ</a>
+                <a href="contact.html" class="py-3 text-secondary font-medium"><i class="fa-solid fa-phone mr-2"></i>Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+        <!-- Slider Container -->
+        <div class="absolute inset-0 w-full h-full">
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 w-full h-full bg-[url('assets/img/hero_farm.png')] bg-cover bg-center transition-opacity duration-1000 z-10 opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 w-full h-full bg-[url('assets/img/hero_tractor.png')] bg-cover bg-center transition-opacity duration-1000 z-0 opacity-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 w-full h-full bg-[url('assets/img/hero_crop.png')] bg-cover bg-center transition-opacity duration-1000 z-0 opacity-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-20 text-center md:text-left text-white mt-16 pointer-events-none">
+            <span class="bg-secondary/80 backdrop-blur-sm text-sm uppercase tracking-widest px-4 py-1 rounded-full inline-block mb-6 shadow-lg">Eco-Friendly Agriculture</span>
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">Growing a <br><span class="text-secondary drop-shadow-md">Greener</span> Tomorrow.</h1>
+            <p class="text-lg md:text-xl max-w-2xl text-gray-200 mb-8 mx-auto md:mx-0 drop-shadow-md">Premium agricultural inputs and comprehensive services designed for sustainable, high-yield farming. Join the revolution in eco-friendly agriculture.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pointer-events-auto">
+                <a href="products.html" class="bg-secondary hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold btn-hover text-lg shadow-lg flex items-center justify-center gap-2">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="about.html" class="bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/50 text-white px-8 py-4 rounded-full font-semibold btn-hover text-lg flex items-center justify-center">Our Story</a>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button id="slider-prev" class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-secondary backdrop-blur-sm border border-white/30 text-white rounded-full flex items-center justify-center text-xl transition-all z-30 shadow-lg cursor-pointer">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="slider-next" class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-secondary backdrop-blur-sm border border-white/30 text-white rounded-full flex items-center justify-center text-xl transition-all z-30 shadow-lg cursor-pointer">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4 glass-dark rounded-2xl hover-zoom">
+                    <div class="text-4xl font-bold text-secondary mb-2">500+</div>
+                    <div class="text-sm text-gray-300 uppercase tracking-wide">Happy Farmers</div>
+                </div>
+                <div class="p-4 glass-dark rounded-2xl hover-zoom">
+                    <div class="text-4xl font-bold text-secondary mb-2">12+</div>
+                    <div class="text-sm text-gray-300 uppercase tracking-wide">Premium Products</div>
+                </div>
+                <div class="p-4 glass-dark rounded-2xl hover-zoom">
+                    <div class="text-4xl font-bold text-secondary mb-2">15</div>
+                    <div class="text-sm text-gray-300 uppercase tracking-wide">Years Experience</div>
+                </div>
+                <div class="p-4 glass-dark rounded-2xl hover-zoom">
+                    <div class="text-4xl font-bold text-secondary mb-2">100%</div>
+                    <div class="text-sm text-gray-300 uppercase tracking-wide">Organic Solutions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Preview -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold tracking-wider uppercase text-sm">Our Store</span>
+                <h2 class="text-4xl font-bold text-primary mt-2">Premium Featured Products</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 card-hover flex flex-col">
+                    <div class="relative h-56 overflow-hidden border-b border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=600" alt="Ammonium Sulphate (Mono)" class="w-full h-full object-cover hover-zoom">
+                        <div class="absolute top-4 right-4 bg-white text-primary font-bold px-3 py-1 rounded-full shadow-md text-sm">Top Seller</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-secondary font-bold tracking-widest uppercase mb-2">Fertilizer</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 font-heading leading-tight">Ammonium Sulphate (Mono)</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Essential nitrogen and sulfur source for rapid growth.</p>
+                        <div class="mb-6 bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs text-gray-500 uppercase tracking-wider block mb-1">Composition / Grade</span>
+                            <span class="font-bold text-primary">98%</span>
+                        </div>
+                        <div class="pt-2 border-t border-gray-100 mt-auto pt-4">
+                            <button onclick="enquireWhatsApp('Ammonium Sulphate (Mono)')" class="w-full bg-[#25D366] hover:bg-[#1da851] text-white px-5 py-3 rounded-xl font-bold transition text-sm flex items-center justify-center gap-2 btn-hover shadow-md">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Enquire on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 card-hover flex flex-col">
+                    <div class="relative h-56 overflow-hidden border-b border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1592484435969-e0c8b368a5c3?auto=format&fit=crop&q=80&w=600" alt="Zinc Sulphate (Mono)" class="w-full h-full object-cover hover-zoom">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-secondary font-bold tracking-widest uppercase mb-2">Fertilizer</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 font-heading leading-tight">Zinc Sulphate (Mono)</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Vital for plant enzyme systems and growth hormones.</p>
+                        <div class="mb-6 bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs text-gray-500 uppercase tracking-wider block mb-1">Composition / Grade</span>
+                            <span class="font-bold text-primary">12%, 21%, 33%</span>
+                        </div>
+                        <div class="pt-2 border-t border-gray-100 mt-auto pt-4">
+                            <button onclick="enquireWhatsApp('Zinc Sulphate (Mono)')" class="w-full bg-[#25D366] hover:bg-[#1da851] text-white px-5 py-3 rounded-xl font-bold transition text-sm flex items-center justify-center gap-2 btn-hover shadow-md">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Enquire on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 card-hover flex flex-col">
+                    <div class="relative h-56 overflow-hidden border-b border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=600" alt="NPK 10:26:26" class="w-full h-full object-cover hover-zoom">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs text-secondary font-bold tracking-widest uppercase mb-2">NPK Blend</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 font-heading leading-tight">NPK 10:26:26</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Balanced complex fertilizer rich in Phosphorus and Potassium.</p>
+                        <div class="mb-6 bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs text-gray-500 uppercase tracking-wider block mb-1">Composition / Grade</span>
+                            <span class="font-bold text-primary">10:26:26</span>
+                        </div>
+                        <div class="pt-2 border-t border-gray-100 mt-auto pt-4">
+                            <button onclick="enquireWhatsApp('NPK 10:26:26')" class="w-full bg-[#25D366] hover:bg-[#1da851] text-white px-5 py-3 rounded-xl font-bold transition text-sm flex items-center justify-center gap-2 btn-hover shadow-md">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Enquire on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-24 bg-light relative overflow-hidden">
+        <!-- Decorative blob -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <img src="assets/img/farmer_tablet.png" alt="Modern Farmer" class="rounded-3xl shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-10 -right-10 bg-white p-6 rounded-2xl shadow-xl z-20 flex items-center gap-4 hidden md:flex">
+                        <div class="w-16 h-16 bg-green-100 text-secondary rounded-full flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">100%</div>
+                            <div class="text-sm text-gray-500">Organic Certified</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <span class="text-secondary font-semibold tracking-wider uppercase text-sm">About Us</span>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-primary mt-2 mb-6 leading-tight">Pioneering Sustainable Farming Practices</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">At Hetshavi Fertilizer, we blend traditional farming wisdom with cutting-edge agritech. We provide farmers with premium, eco-friendly inputs and expert consultancy to ensure healthier crops and a sustainable environment.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700 font-medium"><i class="fa-solid fa-check-circle text-secondary text-xl"></i> Eco-Friendly Solutions</li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium"><i class="fa-solid fa-check-circle text-secondary text-xl"></i> Expert Crop Consultancy</li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium"><i class="fa-solid fa-check-circle text-secondary text-xl"></i> High Yield Guarantee</li>
+                    </ul>
+                    <a href="about.html" class="bg-primary hover:bg-green-900 text-white px-8 py-4 rounded-full font-semibold btn-hover inline-block shadow-lg">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold tracking-wider uppercase text-sm">What We Do</span>
+                <h2 class="text-4xl font-bold text-primary mt-2">Comprehensive Services</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl bg-light border border-gray-100 card-hover text-center group">
+                    <div class="w-20 h-20 mx-auto bg-green-50 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Soil Testing</h3>
+                    <p class="text-gray-600 mb-6">Advanced laboratory testing to understand your soil's health and nutrient profile for optimal crop selection.</p>
+                    <a href="services.html" class="text-secondary font-semibold group-hover:text-primary transition-colors">Read More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl bg-primary text-white shadow-xl card-hover text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+                    <div class="w-20 h-20 mx-auto bg-white/20 backdrop-blur-sm text-white rounded-full flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Crop Consultancy</h3>
+                    <p class="text-gray-300 mb-6">Expert guidance throughout the farming lifecycle, from seed selection to harvesting techniques.</p>
+                    <a href="services.html" class="text-white font-semibold flex items-center justify-center gap-2 hover:underline">Read More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl bg-light border border-gray-100 card-hover text-center group">
+                    <div class="w-20 h-20 mx-auto bg-green-50 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Farmer Training</h3>
+                    <p class="text-gray-600 mb-6">Workshops and field demonstrations to educate farmers on modern, sustainable agricultural practices.</p>
+                    <a href="services.html" class="text-secondary font-semibold group-hover:text-primary transition-colors">Read More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-20 relative overflow-hidden bg-primary">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Farm?</h2>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">Contact our experts today for a free consultation and discover how Hetshavi Fertilizer can boost your yield sustainably.</p>
+            <a href="contact.html" class="bg-secondary hover:bg-white hover:text-primary text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl hover:shadow-2xl">Get in Touch Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-[6px] border-secondary">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                    <span class="text-3xl font-bold text-white tracking-tight">Hetshavi Fertilizer</span>
+                </a>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">Empowering farmers with modern, sustainable agricultural solutions for a greener, more productive tomorrow.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Quick Links<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-3 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Home</a></li>
+                    <li><a href="about.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> About Us</a></li>
+                    <li><a href="products.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Our Products</a></li>
+                    <li><a href="services.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Services</a></li>
+                    <li><a href="faq.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Contact Info<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-secondary text-lg"></i> Shivrudra Complex, Shop No F-4, Leela Road Leela circle,<br>Bhavnagar, Gujarat 364002</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-secondary text-lg"></i> +91 97146 29090</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-secondary text-lg"></i> hetshavifertilizer@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Newsletter<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <p class="text-gray-400 mb-4 text-sm">Subscribe to get the latest updates and special offers.</p>
+                <form class="flex flex-col gap-2">
+                    <input type="email" placeholder="Your Email Address" class="w-full px-4 py-3 rounded-md text-gray-800 outline-none focus:ring-2 focus:ring-secondary border-none" required>
+                    <button type="submit" class="bg-secondary px-4 py-3 rounded-md hover:bg-green-600 transition text-white font-bold text-sm w-full">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 pt-8 border-t border-gray-800 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Hetshavi Fertilizer. All Rights Reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919714629090" class="whatsapp-float group" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-full mr-4 bg-gray-800 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">Chat with us</span>
+    </a>
+
+    <!-- Mobile Call Button (visible only on mobile) -->
+    <a href="tel:+919714629090" class="md:hidden fixed bottom-6 left-6 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl shadow-lg z-50 animate-bounce">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

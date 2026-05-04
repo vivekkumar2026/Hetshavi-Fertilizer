@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hetshavi Fertilizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#1B5E20', secondary: '#4CAF50', light: '#FAFAFA' } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light text-gray-800 pt-20">
+
+    <!-- Header (Same as index.html) -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                <span class="text-2xl font-bold text-primary tracking-tight">Hetshavi Fertilizer</span>
+            </a>
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-secondary transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-secondary transition">About</a>
+                <a href="products.html" class="text-gray-600 hover:text-secondary transition">Products</a>
+                <a href="services.html" class="text-gray-600 hover:text-secondary transition">Services</a>
+                <a href="faq.html" class="text-gray-600 hover:text-secondary transition">FAQ</a>
+            </nav>
+            <div class="hidden md:flex gap-4">
+                <a href="contact.html" class="bg-secondary hover:bg-primary text-white px-6 py-2 rounded-full font-medium btn-hover">Contact Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 glass shadow-lg">
+            <div class="flex flex-col px-4 py-2">
+                <a href="index.html" class="py-3 border-b border-gray-100 text-gray-600">Home</a>
+                <a href="about.html" class="py-3 border-b border-gray-100 text-gray-600">About</a>
+                <a href="products.html" class="py-3 border-b border-gray-100 text-gray-600">Products</a>
+                <a href="services.html" class="py-3 border-b border-gray-100 text-gray-600">Services</a>
+                <a href="faq.html" class="py-3 border-b border-gray-100 text-gray-600">FAQ</a>
+                <a href="contact.html" class="py-3 text-secondary font-medium"><i class="fa-solid fa-phone mr-2"></i>Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Get In Touch</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">We'd love to hear from you. Reach out to us for any queries, bulk orders, or agricultural support.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 -mt-10">
+        <div class="container mx-auto px-4 relative z-20">
+            <div class="flex flex-col lg:flex-row gap-8 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                
+                <!-- Contact Info Panel -->
+                <div class="lg:w-1/3 bg-primary text-white p-10 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full blur-2xl -mr-10 -mt-10"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full blur-2xl -ml-10 -mb-10"></div>
+                    
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Contact Person</h4>
+                                    <p class="text-gray-300 text-sm">Rakesh R Panot</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Our Location</h4>
+                                    <p class="text-gray-300 text-sm">Shivrudra Complex, Shop No F-4, Leela Road Leela circle,<br>Bhavnagar, Gujarat 364002</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Call Us</h4>
+                                    <p class="text-gray-300 text-sm">+91 97146 29090</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Email & Web</h4>
+                                    <p class="text-gray-300 text-sm">hetshavifertilizer@gmail.com<br>www.hetshavifertilizer.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative z-10 mt-12 flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary flex items-center justify-center transition-colors text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary flex items-center justify-center transition-colors text-white"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary flex items-center justify-center transition-colors text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:w-2/3 p-10 lg:p-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow bg-gray-50">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 97146 29090" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow bg-gray-50">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="5" placeholder="How can we help you?" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-shadow bg-gray-50"></textarea>
+                        </div>
+                        <button type="submit" class="bg-secondary hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full btn-hover shadow-lg w-full md:w-auto">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="mb-0">
+        <div class="container mx-auto px-4 mb-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Our Location</h2>
+            <p class="text-gray-500 mt-2">Visit us at our headquarters for a physical consultation.</p>
+        </div>
+        <div class="w-full h-96 bg-gray-200">
+            <!-- Embedding a standard Google Maps iframe -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1683103403561!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-[6px] border-secondary">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                    <span class="text-3xl font-bold text-white tracking-tight">Hetshavi Fertilizer</span>
+                </a>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">Empowering farmers with modern, sustainable agricultural solutions for a greener, more productive tomorrow.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Quick Links<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-3 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Home</a></li>
+                    <li><a href="about.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> About Us</a></li>
+                    <li><a href="products.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Our Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Contact Info<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-secondary text-lg"></i> Shivrudra Complex, Shop No F-4, Leela Road Leela circle, Bhavnagar, Gujarat 364002</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-secondary text-lg"></i> +91 97146 29090</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Newsletter<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <form class="flex flex-col gap-2">
+                    <input type="email" placeholder="Your Email Address" class="w-full px-4 py-3 rounded-md text-gray-800 outline-none focus:ring-2 focus:ring-secondary border-none" required>
+                    <button type="submit" class="bg-secondary px-4 py-3 rounded-md hover:bg-green-600 transition text-white font-bold text-sm w-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+            <p>&copy; 2026 Hetshavi Fertilizer. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/919714629090" class="whatsapp-float group" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-full mr-4 bg-gray-800 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">Chat with us</span>
+    </a>
+
+    <!-- Mobile Call Button (visible only on mobile) -->
+    <a href="tel:+919714629090" class="md:hidden fixed bottom-24 right-4 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl shadow-lg z-50">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

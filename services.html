@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Hetshavi Fertilizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#1B5E20', secondary: '#4CAF50', light: '#FAFAFA' } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light text-gray-800 pt-20">
+
+    <!-- Header (Same as index.html) -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                <span class="text-2xl font-bold text-primary tracking-tight">Hetshavi Fertilizer</span>
+            </a>
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-secondary transition">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-secondary transition">About</a>
+                <a href="products.html" class="text-gray-600 hover:text-secondary transition">Products</a>
+                <a href="services.html" class="text-primary hover:text-secondary transition">Services</a>
+                <a href="faq.html" class="text-gray-600 hover:text-secondary transition">FAQ</a>
+            </nav>
+            <div class="hidden md:flex gap-4">
+                <a href="contact.html" class="bg-secondary hover:bg-primary text-white px-6 py-2 rounded-full font-medium btn-hover">Contact Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 glass shadow-lg">
+            <div class="flex flex-col px-4 py-2">
+                <a href="index.html" class="py-3 border-b border-gray-100 text-gray-600">Home</a>
+                <a href="about.html" class="py-3 border-b border-gray-100 text-gray-600">About</a>
+                <a href="products.html" class="py-3 border-b border-gray-100 text-gray-600">Products</a>
+                <a href="services.html" class="py-3 border-b border-gray-100 text-primary font-medium">Services</a>
+                <a href="faq.html" class="py-3 border-b border-gray-100 text-gray-600">FAQ</a>
+                <a href="contact.html" class="py-3 text-secondary font-medium"><i class="fa-solid fa-phone mr-2"></i>Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Comprehensive Agricultural Support</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Expert advisory and technical services tailored to maximize your farm's potential.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl bg-white shadow-md border border-gray-100 card-hover group">
+                    <div class="w-16 h-16 bg-green-50 text-secondary rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Soil Testing</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Comprehensive laboratory analysis of your soil's macronutrient and micronutrient profiles, pH levels, and organic matter content.</p>
+                    <a href="contact.html" class="text-secondary font-semibold group-hover:text-primary transition-colors flex items-center gap-2">Book Test <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl bg-white shadow-md border border-gray-100 card-hover group">
+                    <div class="w-16 h-16 bg-green-50 text-secondary rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Crop Consultancy</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Personalized guidance from certified agronomists on crop selection, planting schedules, and yield optimization strategies.</p>
+                    <a href="contact.html" class="text-secondary font-semibold group-hover:text-primary transition-colors flex items-center gap-2">Consult Expert <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl bg-white shadow-md border border-gray-100 card-hover group">
+                    <div class="w-16 h-16 bg-green-50 text-secondary rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Farmer Training</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Interactive workshops and seminars on modern, sustainable farming techniques, equipment usage, and safety protocols.</p>
+                    <a href="contact.html" class="text-secondary font-semibold group-hover:text-primary transition-colors flex items-center gap-2">Join Program <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-3xl bg-white shadow-md border border-gray-100 card-hover group">
+                    <div class="w-16 h-16 bg-green-50 text-secondary rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-tractor"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Field Demo</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Live on-farm demonstrations of new agricultural technologies, hybrid seeds performance, and effective pesticide application.</p>
+                    <a href="contact.html" class="text-secondary font-semibold group-hover:text-primary transition-colors flex items-center gap-2">Request Demo <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-3xl bg-white shadow-md border border-gray-100 card-hover group">
+                    <div class="w-16 h-16 bg-green-50 text-secondary rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Disease Control</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Rapid identification and integrated pest management (IPM) solutions for preventing and treating crop diseases effectively.</p>
+                    <a href="contact.html" class="text-secondary font-semibold group-hover:text-primary transition-colors flex items-center gap-2">Get Support <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-3xl bg-white shadow-md border border-gray-100 card-hover group">
+                    <div class="w-16 h-16 bg-green-50 text-secondary rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">24/7 Support</h3>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">Round-the-clock technical support via phone or chat to assist you with emergency queries regarding products or crop issues.</p>
+                    <a href="contact.html" class="text-secondary font-semibold group-hover:text-primary transition-colors flex items-center gap-2">Contact Us <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-[6px] border-secondary mt-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-leaf text-secondary text-3xl"></i>
+                    <span class="text-3xl font-bold text-white tracking-tight">Hetshavi Fertilizer</span>
+                </a>
+                <p class="text-gray-400 mb-6 text-sm leading-relaxed">Empowering farmers with modern, sustainable agricultural solutions for a greener, more productive tomorrow.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Quick Links<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-3 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Home</a></li>
+                    <li><a href="about.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> About Us</a></li>
+                    <li><a href="products.html" class="hover:text-secondary hover:translate-x-1 inline-block transition-transform"><i class="fa-solid fa-chevron-right text-xs mr-2 text-secondary"></i> Our Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Contact Info<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <ul class="flex flex-col gap-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-secondary text-lg"></i> Shivrudra Complex, Shop No F-4, Leela Road Leela circle, Bhavnagar, Gujarat 364002</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-secondary text-lg"></i> +91 97146 29090</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-6 text-white relative inline-block">Newsletter<span class="absolute bottom-0 left-0 w-1/2 h-1 bg-secondary -mb-2 rounded-full"></span></h4>
+                <form class="flex flex-col gap-2">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md text-gray-800 outline-none focus:ring-2 focus:ring-secondary border-none" required>
+                    <button type="submit" class="bg-secondary px-4 py-3 rounded-md hover:bg-green-600 transition text-white font-bold text-sm w-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+            <p>&copy; 2026 Hetshavi Fertilizer. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/919714629090" class="whatsapp-float group" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
